@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>About</class>
+ <widget class="QWidget" name="About">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>535</width>
+    <height>353</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>535</width>
+    <height>353</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>About Tic-Tac-Toe</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/media/rd_square/Important/Qt projects/TicTacToe/Images/tacLogo.png</normaloff>:/media/rd_square/Important/Qt projects/TicTacToe/Images/tacLogo.png</iconset>
+  </property>
+  <widget class="QLabel" name="logoLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>90</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Tic-Tac-Toe Game</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img width=&quot;90&quot; height=&quot;70&quot; src=&quot;:/media/rd_square/Important/Qt projects/TicTacToe/Images/tacLogo.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameLabel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>40</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: yellow
+}</string>
+   </property>
+   <property name="text">
+    <string>Tic-Tac-Toe</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="details">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>130</y>
+     <width>461</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: white
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Tic-Tac-Toe Game:&lt;/b&gt;&lt;i&gt; This game is developed by Rahul and Som from Jaipur, India. It is a simple game to play real tic-tac-toe with animations.More animation more fun!.For any help please contact us on &lt;font color=&quot;aqua&quot;&gt;+91 7568577487&lt;/font&gt;. or email us on &lt;u&gt;&lt;font color=&quot;aqua&quot; &gt; rdsquare144@gmail.com &lt;/font&gt; &lt;/u&gt;.&lt;/i&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>290</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>press 'OK' to continue</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCommandLinkButton {
+color: black;
+background-color:  QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d0fdfc, stop: 0.1 #99ffff, stop: 0.49 #00ffff, stop: 0.5 #00ffff, stop: 1 #20b2aa);
+border-width: 1px;
+border-color: #00ffff;
+border-style: solid;
+border-radius: 20;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+QCommandLinkButton:hover {
+background-color:  QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d0fdfc, stop: 0.1 #99ffff, stop: 0.49 #00ffff, stop: 0.5 #00ffff, stop: 1 #3b3b3b);
+border-width: 1px;
+border-color: #00ffff;
+border-style: solid;
+border-radius: 20;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+QCommandLinkButton:pressed {
+background-color:  QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d0fdfc, stop: 0.1 #99ffff, stop: 0.49 #00ffff, stop: 0.5 #00ffff, stop: 1 #20b2aa);
+border-width: 1px;
+border-color: #00ffff;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/media/rd_square/Important/Qt projects/TicTacToe/Images/tacLogo.png</normaloff>:/media/rd_square/Important/Qt projects/TicTacToe/Images/tacLogo.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

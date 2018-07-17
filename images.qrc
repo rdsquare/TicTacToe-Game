@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/media/rd_square/Important/Qt projects/TicTacToe">
+        <file>Images/apple.gif</file>
+        <file>Images/banana.gif</file>
+        <file>Images/cherry.gif</file>
+        <file>Images/cocoa.gif</file>
+        <file>Images/grape.gif</file>
+        <file>Images/lemon.gif</file>
+        <file>Images/melon.gif</file>
+        <file>Images/peach.gif</file>
+        <file>Images/pear.gif</file>
+        <file>Images/pineapple.gif</file>
+        <file>Images/tomato.gif</file>
+        <file>Images/watermelon.gif</file>
+        <file>Images/dir.gif</file>
+        <file>Images/quit.png</file>
+        <file>Images/quit1.png</file>
+        <file>Images/alcohol.gif</file>
+        <file>Images/background.jpg</file>
+        <file>Images/bug.gif</file>
+        <file>Images/dianosor.gif</file>
+        <file>Images/dog.gif</file>
+        <file>Images/goat.gif</file>
+        <file>Images/ostrich.gif</file>
+        <file>Images/tiger.gif</file>
+        <file>Images/winner.jpg</file>
+        <file>Images/developer1.jpg</file>
+        <file>Images/about.gif</file>
+        <file>Images/tacLogo.png</file>
+        <file>Images/settings.gif</file>
+        <file>Images/animation.gif</file>
+        <file>Images/gBoard.jpeg</file>
+        <file>Images/wtAnim.gif</file>
+        <file>Images/ohw.gif</file>
+        <file>Images/winning.gif</file>
+        <file>Images/home.png</file>
+        <file>Images/play.png</file>
+        <file>Images/replay.png</file>
+        <file>Images/back.png</file>
+        <file>Images/developer2.jpg</file>
+        <file>translations/tictactoe_en_us.qm</file>
+        <file>translations/tictactoe_hi.qm</file>
+    </qresource>
+</RCC>

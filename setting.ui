@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Setting</class>
+ <widget class="QWidget" name="Setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>335</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>357</width>
+    <height>335</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>357</width>
+    <height>335</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Settings - Tic-Tac-Toe</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/media/rd_square/Important/Qt projects/TicTacToe/Images/settings.gif</normaloff>:/media/rd_square/Important/Qt projects/TicTacToe/Images/settings.gif</iconset>
+  </property>
+  <widget class="QLabel" name="gearLabel">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>80</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img width=&quot;80&quot; height=&quot;60&quot;  src=&quot;:/media/rd_square/Important/Qt projects/TicTacToe/Images/settings.gif&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="settingLabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: aqua
+}</string>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="setLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: yellow
+}</string>
+   </property>
+   <property name="text">
+    <string>Use Set:</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="setBox">
+   <property name="geometry">
+    <rect>
+     <x>134</x>
+     <y>110</y>
+     <width>201</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>It will change animations during play.</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+color: teal
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>O &amp; X</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fruits &amp; Vegs</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Animals</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Any</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="player1Label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: yellow
+}</string>
+   </property>
+   <property name="text">
+    <string>Player_1 key:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="keyBox">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>190</y>
+     <width>161</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox  {
+color: teal
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Right-Mouse-Key</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Left-Mouse-Key</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="player2Label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: yellow
+}</string>
+   </property>
+   <property name="text">
+    <string>Player_2 key:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="oKeyLabel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>230</y>
+     <width>161</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: teal
+}</string>
+   </property>
+   <property name="text">
+    <string>Left-Mouse-Key</string>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>270</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+     <underline>true</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>save settings and move to game</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCommandLinkButton {
+color: red;
+background-color:  QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #80ff80, stop: 0.1 #66ff66, stop: 0.49 #80ff80, stop: 0.5 #66ff66, stop: 1 #4dff4d);
+border-width: 1px;
+border-color: #00ff00;
+border-style: solid;
+border-radius: 20;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+QCommandLinkButton:hover {
+background-color:  QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #80ff80, stop: 0.1 #66ff66, stop: 0.49 #4dff4d, stop: 0.5 #4dff4d, stop: 1 #00b300);
+border-width: 1px;
+border-color: #66ff66;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+QCommandLinkButton:pressed {
+background-color:  QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #80ff80, stop: 0.1 #66ff66, stop: 0.49 #80ff80, stop: 0.5 #66ff66, stop: 1 #4dff4d);
+border-width: 1px;
+border-color: #66ff66;
+border-style: solid;
+border-radius: 20;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="langBox">
+   <property name="geometry">
+    <rect>
+     <x>134</x>
+     <y>150</y>
+     <width>201</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>It will change language of game.</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+color: teal
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>English</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hindi</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="langLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: yellow
+}</string>
+   </property>
+   <property name="text">
+    <string>Language:</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>setBox</tabstop>
+  <tabstop>langBox</tabstop>
+  <tabstop>keyBox</tabstop>
+  <tabstop>okButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
